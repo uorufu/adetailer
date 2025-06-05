@@ -11,7 +11,9 @@ import_name = {"py-cpuinfo": "cpuinfo", "protobuf": "google.protobuf"}
 
 
 def is_installed(
-    package: str, min_version: str | None = None, max_version: str | None = None
+    package: str,
+    min_version: str | None = None,
+    max_version: str | None = None,
 ):
     name = import_name.get(package, package)
     try:
@@ -44,7 +46,7 @@ def run_pip(*args):
 def install():
     deps = [
         # requirements
-        ("ultralytics", "8.2.0", None),
+        ("ultralytics", "8.3.75", None),
         ("mediapipe", "0.10.13", "0.10.15"),
         ("rich", "13.0.0", None),
     ]
