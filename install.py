@@ -47,7 +47,7 @@ def install():
     deps = [
         # requirements
         ("ultralytics", "8.3.75", None),
-        ("mediapipe", "0.10.13", "0.10.15"),
+        ("mediapipe", "0.10.13", None),
         ("rich", "13.0.0", None),
     ]
 
